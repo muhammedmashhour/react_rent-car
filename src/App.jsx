@@ -2,7 +2,10 @@
   // react depends
 /* ============ */
 import React, { Component } from 'react';
-
+import {
+  Switch,
+  Route,
+} from "react-router-dom";
 /* ============ */
   // components
 /* ============ */
@@ -13,6 +16,7 @@ import Footer from './components/layouts/footer/Footer';
 
 /* component pages */
 import Home from './components/pages/home/Home';
+import About from './components/pages/About/About';
 
 /* scss components */
 import './App.scss';
@@ -23,7 +27,14 @@ class App extends Component {
     return (
       <>
         <Navbar />
-        <Home />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+        </Switch>
         <Footer />
       </>
     )

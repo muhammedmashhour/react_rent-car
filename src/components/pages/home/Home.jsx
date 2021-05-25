@@ -72,6 +72,38 @@ class Home extends Component {
       ]
     };
 
+    const BrandsSlider = {
+      dots: false,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 6,
+      slidesToScroll: 1,
+      arrows: false,
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          }
+        },
+      ]
+    };
+
 
 
     return (
@@ -200,7 +232,7 @@ class Home extends Component {
           <div className="container">
             <div className="row">
               <div className="col-12">
-                <h3 class="head">
+                <h3 className="head">
                   <span>What advantages will you get using an electric car?</span>
                   <span className="line"></span>
                 </h3>
@@ -259,6 +291,38 @@ class Home extends Component {
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section className="brands">
+          <div className="container">
+            <h3 className="head">
+              <span>Compatible with vehicle brands</span>
+              <span className="line"></span>
+            </h3>
+            <Slider {...BrandsSlider} className="brands__cards">
+              <div className="brands__cards__item">
+                <div><img src="http://efuel.like-themes.com/wp-content/uploads/2018/09/partner-new-1.png" alt="dd" /></div>
+              </div>
+              <div className="brands__cards__item">
+                <div><img src="http://efuel.like-themes.com/wp-content/uploads/2018/09/partner-new-2.png" alt="dd" /></div>
+              </div>
+              <div className="brands__cards__item">
+                <div><img src="http://efuel.like-themes.com/wp-content/uploads/2018/09/partner-new-3.png" alt="dd" /></div>
+              </div>
+              <div className="brands__cards__item">
+                <div><img src="http://efuel.like-themes.com/wp-content/uploads/2018/09/partner-new-4.png" alt="dd" /></div>
+              </div>
+              <div className="brands__cards__item">
+                <div><img src="http://efuel.like-themes.com/wp-content/uploads/2018/09/partner-new-5.png" alt="dd" /></div>
+              </div>
+              <div className="brands__cards__item">
+                <div><img src="http://efuel.like-themes.com/wp-content/uploads/2018/09/partner-new-5.png" alt="dd" /></div>
+              </div>
+              <div className="brands__cards__item">
+                <div><img src="http://efuel.like-themes.com/wp-content/uploads/2018/09/partner-new-5.png" alt="dd" /></div>
+              </div>
+            </Slider>
           </div>
         </section>
       </>
