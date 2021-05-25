@@ -1,0 +1,198 @@
+@import 'main';
+
+.mini-navbar {
+  background: get-color(light);
+  padding: .6rem 0;
+  border-bottom: 1px solid #eaefe8;
+  &__contact {
+    display: flex;
+    align-items: center;
+    & > a {
+      color: get-color(dark);
+      display: flex;
+      align-items: center;
+      margin-right: 1.5rem;
+      i {
+        color: get-color(primary);
+        font-size: 15;
+      }
+      span {
+        display: none;
+        @include largeScreen {
+          display: inline-block;
+        }
+        padding: 0 .5rem;
+        font-size: 12px;
+        font-family: 'Domine';
+        font-weight: bold;
+        transition: .5s;
+        &:hover {
+          color: get-color(primary);
+        }
+      }
+    }
+    &__social {
+      display: none;
+      align-items: center;
+      @include largeScreen {
+        display: flex;
+      }
+      span:not(.line) {
+        color: get-color(dark);
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: capitalize;
+        
+      }
+      span.nav-line {
+        display: inline-block;
+        width: 20px;
+        height: 1px;
+        margin: 0 .8rem;
+        background-color: get-color(dark);
+      }
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: get-color(primary);
+        color: get-color(light);
+        margin-right: .5rem;
+        transition: .5s;
+        i {
+          font-size: 12px;
+        }
+        &:hover {
+          background: get-color(dark);
+        }
+      }
+    }
+  }
+  &__user {
+    display: flex;
+    align-items: center;
+    a {
+      display: flex;
+      align-items: center;
+      margin-left: 1rem;
+      span {
+        display: none;
+        @include largeScreen {
+          display: inline-block;
+        }
+        color: get-color(dark);
+        text-transform: capitalize;
+        font-weight: bold;
+        font-size: 13px;
+        transition: .5s;
+        &:hover {
+          color: get-color(primary);
+        }
+      }
+      i {
+        color: get-color(primary);
+        margin-right: .3rem;
+      }
+    }
+  }
+}
+
+.main-navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 15;
+  background: get-color(light);
+  border-bottom: 1px solid #eaefe8;
+  padding: 1rem 0;
+  &__logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    a {
+      display: flex;
+      align-items: center;
+      img {
+        height: 50px;
+        object-fit: contain;
+      }
+    }
+  }
+  &__links {
+    height: 100%;
+    &__menu {
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: -100%;
+      bottom: 0;
+      width: 100%;
+      background: get-color(light);
+      transition: .5s;
+      &.active {
+        left: 0;
+      }
+      @include largeScreen {
+        display: flex;
+        position: static;
+      }
+      .close-sidebar {
+        @include largeScreen {
+          display: none;
+        }
+        display: flex;
+        justify-content: flex-end;
+        padding: 1.3rem 1rem;
+        button {
+          color: get-color(dark);
+        }
+      }
+
+
+      &__item {
+        padding: .5rem 1rem;
+        position: relative;
+        &:hover, &.active {
+          & > a {
+            color: get-color(primary);
+            transition: .3s;
+          }
+        }
+        &__link {
+          color: get-color(dark);
+          display: flex;
+          align-items: center;
+          i {
+            margin-left: .5rem;
+          }
+          @include font(
+            $family: 'Times New Roman',
+            $transform: capitalize,
+            $weight: bold,
+            $size: 1rem,
+          );
+          transition: .5s;
+        }
+      }
+    }
+    .collapse-sidebar {
+      @include largeScreen {
+        display: none;
+      }
+      span {
+        height: 2px;
+        display: block;
+        width: 30px;
+        background: green;
+        margin-bottom: .5rem;
+        margin-left: 5px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
