@@ -52,7 +52,7 @@
         content: '';
         position: absolute;
         top: 5.5rem;
-        right: -110px;
+        right: -150px;
         display: block;
         height: 2px;
         background: get-color(primary);
@@ -135,7 +135,6 @@
     }
   }
 }
-
 
 .advantages {
   background: get-color(bg);
@@ -228,3 +227,376 @@
     }
   }
 }
+
+.get-start {
+  padding: 5rem 0;
+  position: relative;
+  background: url('http://efuel.like-themes.com/wp-content/uploads/2018/08/parallax_skills.jpg') no-repeat top center;
+  background-size: cover;
+  min-height: 500px;
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(get-color(dark), .9);
+  }
+  &__left, &__right {
+    padding-bottom: 2rem;
+    @include largeScreen {
+      padding-right: 4rem;
+    }
+    h5 {
+      color: get-color(light);
+      font-size: 3rem;
+      font-family: 'Pridi';
+      font-weight: bold;
+      @include largeScreen {
+        font-size: 3.8rem;
+      }
+    }
+    h6 {
+      color: get-color(primary);
+      font-size: 1.7rem;
+      padding-bottom: 1rem;
+      font-family: 'Pridi';
+      font-weight: bold;
+      
+    }
+    p {
+      color: get-color(light);
+      font-size: 16px;
+      font-family: 'Pridi';
+    }
+  }
+}
+
+.get-cart {
+  position: relative;
+  @include largeScreen {
+    padding: 5rem 0;
+    margin-top: -200px;
+  }
+  &__left {
+    box-shadow: 0 0 2px rgba(#c3b4b4, 10%);
+    padding: 2rem;
+    background: get-color(light);
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    h5 {
+      text-transform: capitalize;
+      color: get-color(dark);
+      font-size: 3rem;
+      font-weight: bold;
+      @include largeScreen {
+        font-size: 3.5rem;
+      }
+      span {
+        color: get-color(primary);
+      }
+    }
+    p {
+      text-transform: capitalize;
+      color: get-color(dark);
+      font-size: 16px;
+      padding: .8rem 0;
+    }
+  }
+  &__right {
+    background: url('http://efuel.like-themes.com/wp-content/uploads/2018/08/card_BG.jpg');
+    background-size: cover;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    @include largeScreen {
+      display: flex;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+  
+}
+
+.plans {
+  padding: 2rem 0;
+  @include largeScreen {
+  }
+  .head {
+    margin: 2rem auto 1.5rem auto;
+    font-weight: bold;
+    font-family: 'Pridi';
+    text-align: center;
+    font-size: 2rem;
+    @include largeScreen {
+      width: 50%;
+    }
+    .line {
+      width: 50%;
+      margin: auto;
+      bottom: -1rem;
+      &::after {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+  &__cards {
+  padding: 2rem 0;
+  &__item {
+    padding: 1rem;
+    &__box {
+      box-shadow: 0 0 7px rgba(#c3b4b4, 10%);
+      background: get-color(light);
+      padding: 2rem 1rem;
+      text-align: center;
+      &__img {
+        img {
+          margin: 0px auto;
+          width: 70px;
+          object-fit: contain;
+        }
+      }
+      &__head {
+        @include font(
+          $transform: uppercase,
+          $family: 'Pridi',
+          $weight: bold,
+          $size: 1.5rem,
+        );
+        color: get-color(dark);
+        padding-top: 1rem;
+      }
+      &__price {
+        @include font(
+          $transform: uppercase,
+          $weight: bold,
+          $size: 3rem,
+        );
+        color: get-color(primary);
+        padding: 1rem 0;
+      }
+      &__adv {
+        width: 80%;
+        margin: auto;
+        li {
+          position: relative;
+          padding-left: 1rem;
+          &::after {
+            content: '';
+            position: absolute;
+            height: 5px;
+            width: 5px;
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            background: get-color(primary);
+            display: block;
+          }
+          p {
+            text-transform: capitalize;
+            margin-bottom: .5rem;
+            text-align: left;
+          }
+        }
+      }
+      &__btn {
+        padding-top: 2rem;
+      }
+    }
+  }
+  }
+}
+
+
+.mission {
+  background: get-color(primary);
+  h6 {
+    color: get-color(dark);
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  p {
+    color: get-color(light);
+    font-size: 2rem;
+    line-height: 1.5;
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+  img {
+    height: 200px;
+    transform: translateY(-10px) scaleY(1.1);
+  }
+}
+
+.blog {
+  padding: 2rem 0 6rem;
+  
+  .head {
+    margin: 2rem auto 1.5rem auto;
+    font-weight: bold;
+    font-family: 'Pridi';
+    text-align: center;
+    font-size: 2rem;
+    @include largeScreen {
+      width: 50%;
+    }
+    .line {
+      width: 50%;
+      margin: auto;
+      bottom: -1rem;
+      &::after {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+  &__cards {
+  padding: 2rem 0;
+  &__item {
+    &__box {
+      background: get-color(light);
+      padding: 2rem 1rem;
+      &__img {
+        position: relative;
+        display: block;
+        span {
+          position: absolute;
+          top: 1rem;
+          left: 1rem;
+          padding: .3rem 1rem;
+          background: get-color(primary);
+          color: get-color(light);
+          font-family: 'Pridi';
+          text-transform: capitalize;
+        }
+        img {
+          width: 100%;
+          height: 250px;
+          object-fit: cover;
+        }
+      }
+      &__head {
+        margin-top: -30px;
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+        z-index: 2;
+        span {
+          display: block;
+          &:nth-child(1) {
+            background: get-color(primary);
+            color: get-color(light);
+            text-align: center;
+            padding: .5rem;
+            font-weight: bold;
+            text-transform: capitalize;
+          }
+          &:nth-child(2), &:nth-child(3) {
+            i {
+              color: get-color(primary);
+            }
+            padding: .5rem .7rem;
+            font-size: .9rem;
+            color: get-color(dark);
+          }
+        }
+      }
+      &__title {
+        @include font(
+          $transform: capitalize,
+          $family: 'Pridi',
+          $weight: bold,
+          $size: 1.3rem,
+        );
+        color: get-color(dark);
+        padding-top: 1rem;
+      }
+      &__par {
+        padding: .5rem 0;
+        font-family: 'Pridi';
+        font-size: 1.1rem;
+      }
+      &__btn {
+        padding-top: 2rem;
+        text-transform: capitalize;
+        color: get-color(primary);
+        transition: .5s;
+        font-size: .9rem;
+        i {
+          transition: .5s;
+        }
+        &:hover {
+          color: get-color(dark);
+          & > i {
+            transform: translateX(5px);
+          }
+        }
+      }
+    }
+  }
+  }
+}
+
+.contact {
+  &__cards {
+    &__item {
+      position: relative;
+      padding: .5rem 1.5rem;
+      background: get-color(primary);
+      transition: .5s;
+      display: block;
+      &:hover {
+        background: get-color(dark);
+      }
+      div {
+        padding: 1.5rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span {
+          &:nth-child(1) {
+            width: 40px;
+            height: 40px;
+            background: get-color(light);
+            color: get-color(dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+          }
+          &:nth-child(2) {
+            color: get-color(light);
+            padding-left: 1rem;
+            width: calc(100% - 50px);
+          }
+        }
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-image: linear-gradient(90deg,rgba(0,0,0,0),rgba(255,255,255,.25));
+      }
+      
+    }
+  }
+}
+
+

@@ -2,6 +2,7 @@
 
 html {
   font-size: 100%;
+  scroll-behavior: smooth;
 }
 * {
   box-sizing: border-box;
@@ -13,7 +14,11 @@ body {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
+  &:hover {
+    text-decoration: none !important;
+    color: inherit;
+  }
 }
 
 input {

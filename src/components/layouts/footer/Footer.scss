@@ -1,0 +1,50 @@
+.footer {
+  margin-top: -50px;
+  padding-top: 110px;
+  background: url(http://efuel.like-themes.com/wp-content/uploads/2018/08/footer-bg.png);
+  &__content {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      color: #777;
+      padding: 2rem 0;
+      text-align: center;
+    }
+    &__social {
+      display: none;
+      align-items: center;
+      @include largeScreen {
+        display: flex;
+      }
+      
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: get-color(primary);
+        color: get-color(light);
+        margin-right: .5rem;
+        transition: .5s;
+        i {
+          font-size: 20px;
+        }
+        &:hover {
+          background: get-color(dark);
+        }
+      }
+    }
+  }
+  &__copyright {
+    margin-top: 5rem;
+    background-color: rgba(0,0,0,.25);
+    text-align: center;
+    color: get-color(light);
+    padding: 1rem 0;
+  }
+}
