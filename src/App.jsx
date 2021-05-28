@@ -17,7 +17,7 @@ import Footer from './components/layouts/footer/Footer';
 /* component pages */
 import Home from './components/pages/home/Home';
 import About from './components/pages/About/About';
-import Contact_Page from './components/pages/Contact_Page/Contact_Page';
+import ContactPage from './components/pages/ContactPage/ContactPage';
 
 /* scss components */
 import './App.scss';
@@ -49,7 +49,7 @@ class App extends Component {
         <Switch>
           <Route exact path="/" render={(props) => <Home {...props} />} />
           <Route path="/about" render={(props) => <About {...props} />} />
-          <Route path="/contact" render={(props) => <Contact_Page {...props} />} />
+          <Route path="/contact" render={(props) => <ContactPage {...props} />} />
         </Switch>
         <Footer />
         

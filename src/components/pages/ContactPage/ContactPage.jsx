@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 import Contact from './../../partials/contact/Contact';
 
-import './Contact_Page.scss';
+import './ContactPage.scss';
 
 export default class Contact_Page extends Component {
   render() {
