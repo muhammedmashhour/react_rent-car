@@ -308,7 +308,7 @@ class Home extends Component {
                 </div>
               </div>
               <div className="col-lg-7">
-                <div className="get-cart__right">
+                <div className="get-cart__right" style={{backgroundImage: `url('/imgs/get-cart.jpg')`}}>
                   <img src="/imgs/cart.png" alt="img" />
                 </div>
               </div>
@@ -458,7 +458,7 @@ class Home extends Component {
                 <div className="blog__cards__item__box">
                   <a href="#d" className="blog__cards__item__box__img">
                     <span>electric cars</span>
-                    <img src="http://efuel.like-themes.com/wp-content/uploads/2018/08/blog_01-1-770x515.jpg" alt="img" />
+                    <img src="/imgs/blog1.jpg" alt="img" />
                   </a>
                   <div className="blog__cards__item__box__head">
                     <span>
@@ -485,7 +485,7 @@ class Home extends Component {
                 <div className="blog__cards__item__box">
                   <a href="#d" className="blog__cards__item__box__img">
                     <span>electric cars</span>
-                    <img src="http://efuel.like-themes.com/wp-content/uploads/2018/08/blog_01-1-770x515.jpg" alt="img" />
+                    <img src="/imgs/blog1.jpg" alt="img" />
                   </a>
                   <div className="blog__cards__item__box__head">
                     <span>
