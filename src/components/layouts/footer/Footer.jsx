@@ -5,7 +5,7 @@ import './Footer.scss';
 
 function Footer() {
   return (
-    <section className="footer">
+    <section className="footer" style={{backgroundImage: `url('/imgs/foot-bg.png')`}}>
       <div className="footer__content">
         <a href="#d">
           <img src="/imgs/foot-logo.png" alt="" />
