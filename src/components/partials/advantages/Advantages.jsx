@@ -42,7 +42,7 @@ export default function Advantages() {
             </div>
           </div>
           <div className="col-lg">
-            <img className="advantages-img" src="http://efuel.like-themes.com/wp-content/uploads/2018/08/advantage-1-1.png" alt="dd" />
+            <img className="advantages-img" src="/imgs/adv.png" alt="dd" />
           </div>
           <div className="col-12 col-lg">
             <div className="advantages__cards">

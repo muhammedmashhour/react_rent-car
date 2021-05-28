@@ -164,7 +164,7 @@ class Home extends Component {
               </div>
               <div className="col-lg-6 d-none d-lg-block">
                 <div className="header__img">
-                  <img src="http://efuel.like-themes.com/wp-content/uploads/2018/08/slider-car-full.jpg" alt="header img" />
+                  <img src="/imgs/slider-car-full.jpg" alt="header img" />
                 </div>
               </div>
             </div>
@@ -180,7 +180,7 @@ class Home extends Component {
             >
               <div className="services__cards__item">
                 <div>
-                  <img src="http://efuel.like-themes.com/wp-content/uploads/2018/08/serv_01-690x410.jpg" alt="d" />
+                  <img src="/imgs/serv1.jpg" alt="d" />
                   <h3>home charging</h3>
                   <span className="line"></span>
                   <p>We are the leading developer and installer of modern electr.</p>
@@ -191,7 +191,7 @@ class Home extends Component {
               </div>
               <div className="services__cards__item">
                 <div>
-                  <img src="http://efuel.like-themes.com/wp-content/uploads/2018/08/serv_02-690x410.jpg" alt="d" />
+                  <img src="/imgs/serv2.jpg" alt="d" />
                   <h3>home charging</h3>
                   <span className="line"></span>
                   <p>We are the leading developer and installer of modern electr.</p>
@@ -202,7 +202,7 @@ class Home extends Component {
               </div>
               <div className="services__cards__item">
                 <div>
-                  <img src="http://efuel.like-themes.com/wp-content/uploads/2018/08/serv_03-690x410.jpg" alt="d" />
+                  <img src="/imgs/serv3.jpg" alt="d" />
                   <h3>home charging</h3>
                   <span className="line"></span>
                   <p>We are the leading developer and installer of modern electr.</p>
@@ -213,7 +213,7 @@ class Home extends Component {
               </div>
               <div className="services__cards__item">
                 <div>
-                  <img src="http://efuel.like-themes.com/wp-content/uploads/2018/08/serv_04-690x410.jpg" alt="d" />
+                  <img src="/imgs/serv1.jpg" alt="d" />
                   <h3>home charging</h3>
                   <span className="line"></span>
                   <p>We are the leading developer and installer of modern electr.</p>
@@ -231,7 +231,7 @@ class Home extends Component {
             <Slider {...StepsSlider} className="steps__cards">
               <div className="steps__cards__item">
                 <div className="steps__cards__item__details">
-                  <div><img src="http://efuel.like-themes.com/wp-content/uploads/2018/08/level-1-1.png" alt="dd" /></div>
+                  <div><img src="/imgs/step1.png" alt="dd" /></div>
                   <div>
                     <h5>level 4</h5>
                     <span>up to 100 km, 30 minutes</span>
@@ -240,7 +240,7 @@ class Home extends Component {
               </div>
               <div className="steps__cards__item">
                 <div className="steps__cards__item__details">
-                  <div><img src="http://efuel.like-themes.com/wp-content/uploads/2018/08/level-2-1.png" alt="dd" /></div>
+                  <div><img src="/imgs/step2.png" alt="dd" /></div>
                   <div>
                     <h5>level 4</h5>
                     <span>up to 100 km, 30 minutes</span>
@@ -249,7 +249,7 @@ class Home extends Component {
               </div>
               <div className="steps__cards__item">
                 <div className="steps__cards__item__details">
-                  <div><img src="http://efuel.like-themes.com/wp-content/uploads/2018/08/level-3.png" alt="dd" /></div>
+                  <div><img src="/imgs/step3.png" alt="dd" /></div>
                   <div>
                     <h5>level 4</h5>
                     <span>up to 100 km, 30 minutes</span>
@@ -258,7 +258,7 @@ class Home extends Component {
               </div>
               <div className="steps__cards__item">
                 <div className="steps__cards__item__details">
-                  <div><img src="http://efuel.like-themes.com/wp-content/uploads/2018/08/level-4-1.png" alt="dd" /></div>
+                  <div><img src="/imgs/step4.png" alt="dd" /></div>
                   <div>
                     <h5>level 4</h5>
                     <span>up to 100 km, 30 minutes</span>
@@ -273,7 +273,7 @@ class Home extends Component {
 
         <Brands />
 
-        <section className="get-start">
+        <section className="get-start" style={{backgroundImage: `url('/imgs/get-start.jpg')`}}>
           <div className="overlay"></div>
           <div className="container">
             <div className="row">
@@ -309,7 +309,7 @@ class Home extends Component {
               </div>
               <div className="col-lg-7">
                 <div className="get-cart__right">
-                  <img src="http://efuel.like-themes.com/wp-content/uploads/2018/08/cards.png" alt="img" />
+                  <img src="/imgs/cart.png" alt="img" />
                 </div>
               </div>
             </div>
@@ -328,7 +328,7 @@ class Home extends Component {
               <div className="plans__cards__item">
                 <div className="plans__cards__item__box">
                   <div className="plans__cards__item__box__img">
-                    <img src="http://efuel.like-themes.com/wp-content/uploads/2018/08/tariff-1.png" alt="img" />
+                    <img src="/imgs/plan1.png" alt="img" />
                   </div>
                   <div className="plans__cards__item__box__head">
                     basic plan
@@ -353,7 +353,7 @@ class Home extends Component {
               <div className="plans__cards__item">
                 <div className="plans__cards__item__box">
                   <div className="plans__cards__item__box__img">
-                    <img src="http://efuel.like-themes.com/wp-content/uploads/2018/08/tariff-1.png" alt="img" />
+                    <img src="/imgs/plan1.png" alt="img" />
                   </div>
                   <div className="plans__cards__item__box__head">
                     basic plan
@@ -378,7 +378,7 @@ class Home extends Component {
               <div className="plans__cards__item">
                 <div className="plans__cards__item__box">
                   <div className="plans__cards__item__box__img">
-                    <img src="http://efuel.like-themes.com/wp-content/uploads/2018/08/tariff-1.png" alt="img" />
+                    <img src="/imgs/plan1.png" alt="img" />
                   </div>
                   <div className="plans__cards__item__box__head">
                     basic plan
@@ -412,7 +412,7 @@ class Home extends Component {
                 <p>Make the world cleaner, save natural resources, create comfort for people</p>
               </div>
               <div className="col-lg-5 d-none d-lg-block">
-                <img src="http://efuel.like-themes.com/wp-content/uploads/2018/08/mission-bg-leaves.png" alt="d" />
+                <img src="/imgs/mission.png" alt="d" />
               </div>
             </div>
           </div>
@@ -431,7 +431,7 @@ class Home extends Component {
                 <div className="blog__cards__item__box">
                   <a href="#d" className="blog__cards__item__box__img">
                     <span>electric cars</span>
-                    <img src="http://efuel.like-themes.com/wp-content/uploads/2018/08/blog_01-1-770x515.jpg" alt="img" />
+                    <img src="/imgs/blog1.jpg" alt="img" />
                   </a>
                   <div className="blog__cards__item__box__head">
                     <span>

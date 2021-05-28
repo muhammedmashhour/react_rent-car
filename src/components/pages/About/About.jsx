@@ -17,7 +17,7 @@ export default class About extends Component {
 
     return (
       <>
-        <section className="about-header">
+        <section className="about-header" style={{backgroundImage: `url('/imgs/custom-header.jpg')`}}>
           <div className="overlay"></div>
           <div className="container">
             <div className="about-header__content">
@@ -44,7 +44,7 @@ export default class About extends Component {
               </div>
               <div className="col-lg-6 d-none d-lg-block">
                 <div className="about-us__img">
-                  <img src="http://efuel.like-themes.com/wp-content/uploads/2018/09/about-image.jpg" alt="header img" />
+                  <img src="/imgs/about.jpg" alt="header img" />
                 </div>
               </div>
             </div>

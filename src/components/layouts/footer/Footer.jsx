@@ -8,7 +8,7 @@ function Footer() {
     <section className="footer">
       <div className="footer__content">
         <a href="#d">
-          <img src="http://efuel.like-themes.com/wp-content/uploads/2018/08/logo-footer.png" alt="" />
+          <img src="/imgs/foot-logo.png" alt="" />
         </a>
         <p>Integer maximus accumsan nunc, sit amet tempor lectus facilisis eu. Cras vel elit felis. Vestibulum convallis ipsum id aliquam varius.</p>
         <div className="footer__content__social">

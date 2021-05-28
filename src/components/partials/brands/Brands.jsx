@@ -48,25 +48,25 @@ export default function Brands() {
         </h3>
         <Slider {...BrandsSlider} className="brands__cards">
           <div className="brands__cards__item">
-            <div><img className="m-auto" src="http://efuel.like-themes.com/wp-content/uploads/2018/09/partner-new-1.png" alt="dd" /></div>
+            <div><img className="m-auto" src="/imgs/b1.png" alt="dd" /></div>
           </div>
           <div className="brands__cards__item">
-            <div><img className="m-auto" src="http://efuel.like-themes.com/wp-content/uploads/2018/09/partner-new-2.png" alt="dd" /></div>
+            <div><img className="m-auto" src="/imgs/b2.png" alt="dd" /></div>
           </div>
           <div className="brands__cards__item">
-            <div><img className="m-auto" src="http://efuel.like-themes.com/wp-content/uploads/2018/09/partner-new-3.png" alt="dd" /></div>
+            <div><img className="m-auto" src="/imgs/b3.png" alt="dd" /></div>
           </div>
           <div className="brands__cards__item">
-            <div><img className="m-auto" src="http://efuel.like-themes.com/wp-content/uploads/2018/09/partner-new-4.png" alt="dd" /></div>
+            <div><img className="m-auto" src="/imgs/b4.png" alt="dd" /></div>
           </div>
           <div className="brands__cards__item">
-            <div><img className="m-auto" src="http://efuel.like-themes.com/wp-content/uploads/2018/09/partner-new-5.png" alt="dd" /></div>
+            <div><img className="m-auto" src="/imgs/b5.png" alt="dd" /></div>
           </div>
           <div className="brands__cards__item">
-            <div><img className="m-auto" src="http://efuel.like-themes.com/wp-content/uploads/2018/09/partner-new-5.png" alt="dd" /></div>
+            <div><img className="m-auto" src="/imgs/b3.png" alt="dd" /></div>
           </div>
           <div className="brands__cards__item">
-            <div><img className="m-auto" src="http://efuel.like-themes.com/wp-content/uploads/2018/09/partner-new-5.png" alt="dd" /></div>
+            <div><img className="m-auto" src="/imgs/b1.png" alt="dd" /></div>
           </div>
         </Slider>
       </div>

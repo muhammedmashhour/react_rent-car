@@ -57,7 +57,7 @@ function Navbar(props) {
           <div className="d-flex justify-content-between align-items-center">
             <div className="main-navbar__logo">
               <a href="#d">
-                <img src="http://efuel.like-themes.com/wp-content/themes/efuel/assets/images/logo.png" alt="" />
+                <img src="/imgs/nav-logo.png" alt="" />
               </a>
             </div>
             <div className="main-navbar__links justify-content-end align-items-center">

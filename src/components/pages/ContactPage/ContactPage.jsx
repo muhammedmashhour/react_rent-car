@@ -11,7 +11,7 @@ export default class Contact_Page extends Component {
   render() {
     return (
       <>
-        <section className="contact-header">
+        <section className="contact-header" style={{backgroundImage: `url('/imgs/custom-header.jpg')`}}>
           <div className="overlay"></div>
           <div className="container">
             <div className="contact-header__content">
