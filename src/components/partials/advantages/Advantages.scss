@@ -1,0 +1,63 @@
+@import 'main';
+.advantages {
+  background: get-color(bg);
+  @include largeScreen {
+    padding: 3rem 0;
+  }
+  .head {
+    margin: 3rem auto 5rem auto;
+    font-weight: bold;
+    font-family: 'Pridi';
+    text-align: center;
+    @include largeScreen {
+      width: 40%;
+    }
+    .line {
+      background: get-color(light);
+      width: 50%;
+      margin: auto;
+      bottom: -1rem;
+      &::after {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+  &-img {
+    height: 500px;
+    display: none;
+    @include largeScreen {
+      display: block;
+    }
+  }
+  &__cards {
+    @include largeScreen {
+      padding-top: 2rem;
+    }
+    &__item {
+      padding-bottom: 2rem;
+      h6 {
+        display: flex;
+        align-items: center;
+        .adv-icon {
+          width: 30px;
+          height: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: get-color(light);
+          border-radius: 50%;
+          font-weight: bold;
+        }
+        .adv-head {
+          width: calc(100% - 30px);
+          padding: 0 .8rem;
+          font-weight: bold;
+          font-size: 1.5rem;
+          color: get-color(primary);
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}

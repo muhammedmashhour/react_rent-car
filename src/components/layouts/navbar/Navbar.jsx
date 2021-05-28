@@ -4,7 +4,8 @@ import './Navbar.scss';
 
 import { Link } from 'react-router-dom';
 
-function Navbar() {
+function Navbar(props) {
+  console.log(props);
 
   const [openSidebar, setOpenSidebar] = useState(false);
 
@@ -66,7 +67,7 @@ function Navbar() {
                     <i className="fas fa-times"></i>
                   </button>
                 </li>
-                <li className='main-navbar__links__menu__item active'>
+                <li className='main-navbar__links__menu__item'>
                   <Link className="main-navbar__links__menu__item__link" to="/">
                     home
                     <i className="fas fa-angle-down"></i>

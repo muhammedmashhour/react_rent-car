@@ -17,7 +17,7 @@ import Footer from './components/layouts/footer/Footer';
 /* component pages */
 import Home from './components/pages/home/Home';
 import About from './components/pages/About/About';
-import Contact from './components/pages/Contact/Contact';
+import Contact_Page from './components/pages/Contact_Page/Contact_Page';
 
 /* scss components */
 import './App.scss';
@@ -44,18 +44,12 @@ class App extends Component {
 
   render() {
     return (
-      <section id="tt">
+      <section id="top">
         <Navbar />
         <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
+          <Route exact path="/" render={(props) => <Home {...props} />} />
+          <Route path="/about" render={(props) => <About {...props} />} />
+          <Route path="/contact" render={(props) => <Contact_Page {...props} />} />
         </Switch>
         <Footer />
         

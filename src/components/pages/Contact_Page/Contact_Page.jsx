@@ -1,49 +1,14 @@
 import React, { Component } from 'react';
 
-import Slider from "react-slick";
 
 import { Link } from 'react-router-dom';
 
-import './Contact.scss';
+import Contact from './../../partials/contact/Contact';
 
-export default class Contact extends Component {
+import './Contact_Page.scss';
+
+export default class Contact_Page extends Component {
   render() {
-
-
-    const contactSlider = {
-      dots: false,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      arrows: false,
-      responsive: [
-        {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          }
-        },
-        {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-          }
-        },
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
-          }
-        },
-      ]
-    };
-
-
-
     return (
       <>
         <section className="contact-header">
@@ -131,42 +96,7 @@ export default class Contact extends Component {
           <iframe title="d" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder="0"></iframe>
         </section>
 
-        <section className="contact">
-          <div className="container">
-            <Slider {...contactSlider} className="contact__cards">
-              <a href="#d" className="contact__cards__item">
-                <div>
-                  <span><i className="fas fa-map-marker-alt"></i></span>
-                  <span>assomf sfm osf iosdnf oi</span>
-                </div>
-              </a>
-              <a href="#d" className="contact__cards__item">
-                <div>
-                  <span><i className="fas fa-map-marker-alt"></i></span>
-                  <span>assomf sfm osf iosdnf oi</span>
-                </div>
-              </a>
-              <a href="#d" className="contact__cards__item">
-                <div>
-                  <span><i className="fas fa-map-marker-alt"></i></span>
-                  <span>assomf sfm osf iosdnf oi</span>
-                </div>
-              </a>
-              <a href="#d" className="contact__cards__item">
-                <div>
-                  <span><i className="fas fa-map-marker-alt"></i></span>
-                  <span>assomf sfm osf iosdnf oi</span>
-                </div>
-              </a>
-              <a href="#d" className="contact__cards__item">
-                <div>
-                  <span><i className="fas fa-map-marker-alt"></i></span>
-                  <span>assomf sfm osf iosdnf oi</span>
-                </div>
-              </a>
-            </Slider>
-          </div>
-        </section>
+        <Contact />
       </>
     )
   }
