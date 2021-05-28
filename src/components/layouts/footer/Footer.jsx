@@ -1,6 +1,5 @@
 import React from 'react';
 
-import 'main';
 
 import './Footer.scss';
 
@@ -28,7 +27,7 @@ function Footer() {
         </div>
       </div>
       <div className="footer__copyright">
-        created by doda!
+        &copy; All copy reserved!
       </div>
     </section>
   )

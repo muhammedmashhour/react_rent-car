@@ -10,11 +10,14 @@ class Home extends Component {
 
     const ServicesSlider = {
       dots: false,
+      autoplay: true,
       infinite: true,
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 1,
       arrows: false,
+
+
       responsive: [
         {
           breakpoint: 767,
@@ -43,6 +46,7 @@ class Home extends Component {
     const StepsSlider = {
       dots: false,
       infinite: true,
+      autoplay: true,
       speed: 500,
       slidesToShow: 4,
       slidesToScroll: 1,
@@ -75,6 +79,7 @@ class Home extends Component {
     const PlansSlider = {
       dots: false,
       infinite: true,
+      autoplay: true,
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 1,
@@ -109,6 +114,7 @@ class Home extends Component {
       dots: false,
       infinite: true,
       speed: 500,
+      autoplay: true,
       slidesToShow: 6,
       slidesToScroll: 1,
       arrows: false,
@@ -142,6 +148,7 @@ class Home extends Component {
       dots: false,
       infinite: true,
       speed: 500,
+      autoplay: true,
       slidesToShow: 3,
       slidesToScroll: 1,
       arrows: false,
@@ -174,6 +181,7 @@ class Home extends Component {
       dots: false,
       infinite: true,
       speed: 500,
+      autoplay: true,
       slidesToShow: 4,
       slidesToScroll: 1,
       arrows: false,
@@ -595,9 +603,9 @@ class Home extends Component {
                       <i className="far fa-eye"></i> 848 views
                     </span>
                   </div>
-                  <div className="blog__cards__item__box__title">
+                  <a href="#d" className="blog__cards__item__box__title">
                     The number of electric vehicles in the UK has doubled
-                  </div>
+                  </a>
                   <p className="blog__cards__item__box__par">Integer maximus accumsan nunc, sit amet tempor vel elit felis. Vestibulum convallis ipsum id aliquam varius. Etiam nec laore</p>
                   
                   <a href="#d" className="blog__cards__item__box__btn">
@@ -622,9 +630,9 @@ class Home extends Component {
                       <i className="far fa-eye"></i> 848 views
                     </span>
                   </div>
-                  <div className="blog__cards__item__box__title">
+                  <a href="#d" className="blog__cards__item__box__title">
                     The number of electric vehicles in the UK has doubled
-                  </div>
+                  </a>
                   <p className="blog__cards__item__box__par">Integer maximus accumsan nunc, sit amet tempor vel elit felis. Vestibulum convallis ipsum id aliquam varius. Etiam nec laore</p>
                   
                   <a href="#d" className="blog__cards__item__box__btn">
@@ -649,9 +657,9 @@ class Home extends Component {
                       <i className="far fa-eye"></i> 848 views
                     </span>
                   </div>
-                  <div className="blog__cards__item__box__title">
+                  <a href="#d" className="blog__cards__item__box__title">
                     The number of electric vehicles in the UK has doubled
-                  </div>
+                  </a>
                   <p className="blog__cards__item__box__par">Integer maximus accumsan nunc, sit amet tempor vel elit felis. Vestibulum convallis ipsum id aliquam varius. Etiam nec laore</p>
                   
                   <a href="#d" className="blog__cards__item__box__btn">
@@ -659,10 +667,7 @@ class Home extends Component {
                   </a>
                 </div>
               </div>
-
             </Slider>
-
-
             <div className="d-flex justify-content-center">
               <button className="primary-btn" type="button">
                 <span>read more</span>

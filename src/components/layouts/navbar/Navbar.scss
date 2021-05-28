@@ -67,6 +67,9 @@
         }
         &:hover {
           background: get-color(dark);
+          i {
+            color: get-color(light);
+          }
         }
       }
     }
