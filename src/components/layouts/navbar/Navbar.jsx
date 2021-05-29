@@ -79,6 +79,24 @@ function Navbar(props) {
                     <i className="fas fa-angle-down"></i>
                   </Link>
                 </li>
+                <li className='main-navbar__links__menu__item'>
+                  <a className="main-navbar__links__menu__item__link" href="#services">
+                    services
+                    <i className="fas fa-angle-down"></i>
+                  </a>
+                </li>
+                <li className='main-navbar__links__menu__item'>
+                  <a className="main-navbar__links__menu__item__link" href="#blogs">
+                    blogs
+                    <i className="fas fa-angle-down"></i>
+                  </a>
+                </li>
+                <li className='main-navbar__links__menu__item'>
+                  <a className="main-navbar__links__menu__item__link" href="#plans">
+                    plans
+                    <i className="fas fa-angle-down"></i>
+                  </a>
+                </li>
                 
                 <li className='main-navbar__links__menu__item'>
                   <Link className="main-navbar__links__menu__item__link" to="/contact">

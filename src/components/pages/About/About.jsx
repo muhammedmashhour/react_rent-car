@@ -33,7 +33,7 @@ export default class About extends Component {
         <section className="about-us">
           <div className="container">
             <div className="row">
-              <div className="col-lg-6">
+              <div className="col-lg-6 order-2 order-lg-1">
                 <div className="about-us__content">
                   <h3>We produce modern electric vehicle charging systems</h3>
                   <p>Quisque nec rhoncus est. Curabitur maximus tristique risus, id consequat nisl tincidunt euismod. Sed eu arcu a sapien bibendum posuere eu eu orci. Aliquam erat volutpat. Integer malesuada turpis id fringilla suscipit. Maecenas ultrices, orci vitae convallis mattis, quam nulla vehicula felis.</p>
@@ -42,9 +42,9 @@ export default class About extends Component {
                   </button>
                 </div>
               </div>
-              <div className="col-lg-6 d-none d-lg-block">
-                <div className="about-us__img">
-                  <img src="/imgs/about.jpg" alt="header img" />
+              <div className="col-lg-6 order-1 order-lg-2">
+                <div className="about-us__video">
+                  <iframe frameBorder="0" title="video" src="https://www.youtube.com/embed/zMYx3UWdGoE"></iframe>
                 </div>
               </div>
             </div>

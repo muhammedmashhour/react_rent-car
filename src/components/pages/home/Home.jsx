@@ -171,7 +171,7 @@ class Home extends Component {
           </div>
         </section>
 
-        <section className="services">
+        <section id="services" className="services">
           <div className="container">
             <h3 className="services__head">We are the leading developer and installer of modern electric vehicle charging systems</h3>
             <Slider
@@ -317,7 +317,7 @@ class Home extends Component {
         </section>
 
 
-        <section className="plans">
+        <section id="plans" className="plans">
           <div className="container">
           <h3 className="head">
               <span>Choose your ready-made solution</span>
@@ -419,7 +419,7 @@ class Home extends Component {
         </section>
 
 
-        <section className="blog">
+        <section id="blogs" className="blog">
           <div className="container">
           <h3 className="head">
               <span>Recent articles and news</span>
